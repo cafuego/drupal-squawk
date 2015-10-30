@@ -7,6 +7,6 @@
 /**
  * Implements hook_init().
  */
-function squawk_init() {
-  drupal_add_js('http://squawk.cc/squawk.js', array('type' => 'external', 'scope' => 'footer'));
+function squawk_init(){
+  drupal_set_html_head('<script type="text/javascript" src="http://squawk.cc/squawk.js"></script>');
 }
