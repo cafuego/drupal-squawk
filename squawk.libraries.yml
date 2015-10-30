@@ -1,0 +1,9 @@
+squawk.squawkjs:
+  remote: http://squawk.cc/
+  version: 1.0
+  license:
+    name: Unknown
+    url: http://squawk.cc/
+    gpl-compatible: false
+  js:
+    http://squawk.cc/squawk.js: { type: external, minified: false }

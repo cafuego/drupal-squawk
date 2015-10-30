@@ -5,8 +5,8 @@
  */
 
 /**
- * Implements hook_init().
+ * Implements hook_page_attachments().
  */
-function squawk_init() {
-  drupal_add_js('http://squawk.cc/squawk.js', array('type' => 'external', 'scope' => 'footer'));
+function squawk_page_attachments(array &$page) {
+  $page['#attached']['library'][] = 'squawk/squawk.squawkjs';
 }
